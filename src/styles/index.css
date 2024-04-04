@@ -10,3 +10,7 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+
+.light-blue-bg {
+    background-color: #cfe2f3; /* Light Blue */
+}
