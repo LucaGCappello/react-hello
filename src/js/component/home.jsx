@@ -1,45 +1,57 @@
 import React from "react";
-
-//include images into your bundle
 import Footer from "./footer";
 import NavBar from "./navbar";
 import Card from "./card";
 import Jumbotron from "./jumbotron";
-//create your first component
-const Home = () => {
-	return (
 
-		<div className="text-center">
-			<NavBar />
-			<div className="container-fluid light-blue-bg mb-5">
+const Home = () => {
+    return (
+        <div className="text-center">
+            <NavBar />
+            <div className="container-fluid light-blue-bg mb-5">
                 <div className="container">
                     <Jumbotron />
                 </div>
             </div>
             <div className="container">
-			 
-            <div className="row">
-                <div className="col">
-                    <Card />
+                <div className="row">
+                    <div className="col">
+                        <Card
+                            imageUrl="..."
+                            title="Card 1"
+                            text="Some quick example text to build on the card title and make up the bulk of the card's content."
+                            link="#"
+                        />
+                    </div>
+                    <div className="col ps-1 pe-1">
+                        <Card
+                            imageUrl="..."
+                            title="Card 2"
+                            text="Some quick example text to build on the card title and make up the bulk of the card's content."
+                            link="#"
+                        />
+                    </div>
+                    <div className="col ps-1 pe-1">
+                        <Card
+                            imageUrl="..."
+                            title="Card 3"
+                            text="Some quick example text to build on the card title and make up the bulk of the card's content."
+                            link="#"
+                        />
+                    </div>
+                    <div className="col ps-1 pe-1">
+                        <Card
+                            imageUrl="..."
+                            title="Card 4"
+                            text="Some quick example text to build on the card title and make up the bulk of the card's content."
+                            link="#"
+                        />
+                    </div>
                 </div>
-                <div className="col" style={{ marginLeft: '5px', marginRight: '5px' }}>
-                    <Card />
-                </div>
-                <div className="col" style={{ marginLeft: '5px', marginRight: '5px' }}>
-                    <Card />
-                </div>
-                <div className="col">
-                    <Card />
-			
-                </div>
-				<Footer />
+                <Footer />
             </div>
-			
         </div>
-		
-        </div>
-	);
-};
+    );
+}
 
 export default Home;
-
